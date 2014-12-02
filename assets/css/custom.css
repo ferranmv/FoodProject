@@ -1,0 +1,425 @@
+
+
+body {
+   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+}
+
+
+.sidebar-menu {
+   background: none repeat scroll 0% 0% #FAFAFA;
+}
+
+.flagIcon {
+	 background-image: url('../../assets/images/flags/Spain.png') !important;
+   height: 20px;
+	background-size:cover; 
+}
+
+.sidebar-menu .main-menu li.active > a {
+    color: #16191E;
+}
+
+
+.scroll > li {
+    line-height: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 25px;
+    padding-top: 15px;
+
+}
+
+.panel.panel-border {
+    border: 0px solid #CCC;
+}
+
+.panel.panel-shadow {
+    box-shadow: 0px 0px 0px rgba(0, 1, 1, 0.08);
+}
+
+.choseTimeline {
+    width: 60px;
+    height: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 2.1em;
+    line-height: 60px;
+    position: absolute;
+    color: #FFF;
+    border:;
+    background: none repeat scroll 0% 0% #46A4DA;
+    border-radius: 50%;
+    text-align:center;
+  
+}
+
+
+.navbar-brand {
+    line-height: 32px;
+    color: #d35400; ;
+  }
+
+.page-container .main-content {
+    padding: 10px 30px 0px;
+}
+
+
+
+.logo1 {
+    font-family: 'Lato', serif,Helvetica,Arial;
+    font-weight:700;
+    font-size: 40px;
+    line-height: 32px;
+    color:  #d35400; 
+    letter-spacing: -2px;
+    }
+
+.logo2  {
+    font-family: 'Lato', serif,Helvetica,Arial;
+    font-weight:300;
+    font-size: 30px;
+    line-height: 28px;
+    color: #d35400;
+
+  
+}
+
+
+.panel-heading h2 {
+    font-size: 38px !important;
+    font-weight:400;
+    line-height: 25px !important;
+    color: #633B1D; !important;
+    text-align: center;
+    
+}
+
+
+.wrapper {
+    text-align: center;
+}
+
+.buttonCenter  {
+    position: absolute;
+    top: 50%;
+}
+
+
+.LikeCount {
+  font-weight:900;
+  color:#1C475C;
+}
+
+.ReviewRight {
+    float:right;
+}
+
+.page-body .main-content .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-review  {
+    background-color: #d35400;
+    color:#fff;
+}
+
+.page-body .main-content .cbp_tmtimeline > li .cbp_tmicon.timeline-bg-badge  {
+    background-color: #f1c40f;
+    color:#fff;
+}
+
+.Review {
+    color: #d35400; font-size:16px;
+}
+
+.PointsCount {
+    color: #d35400; 
+    font-weight:900;
+}
+
+
+
+.sidebar-menu .main-menu li.active > a:hover  {
+    color: #16191E !important;
+}
+
+
+
+.sidebar-menu .main-menu a {
+
+    border-bottom: none;
+}
+
+.panel-question { 
+    font-family: 'Playfair Display', serif,Helvetica,Arial;
+    padding: 0px;
+    background: transparent;
+    margin-bottom: 0px;
+
+}
+
+.panel-question .panel-body {
+   
+		height: 400px;
+		 background-size:cover; 
+     position:relative;
+     margin-bottom: 0px;
+     border-bottom: 2px solid #633B1D;
+     
+}
+
+
+
+
+.panel-question .panel-heading {
+ 
+    border-bottom: 2px solid #633B1D;
+    padding: 13px 3px 22px 3px;
+
+    
+}
+
+.cuisine {
+    padding-top:10px;
+    background: none repeat scroll 0% 0% #FAFAFA;
+    height:55px;
+    
+}
+
+.AnswerBlock {
+    margin-top:10px;
+    padding:10px;
+    background: none repeat scroll 0% 0% #FAFAFA;
+    text-align:center;
+     background-image: url('../../assets/images/food.png') !important;
+  background-repeat: repeat !important;
+    
+}
+
+.YouRanking {
+    
+    background: none repeat scroll 0% 0% #FAFAFA;
+    border-right: 1px solid #D35400;
+    border-left: 1px solid #D35400;
+    font-size:13px;
+    padding-bottom:5px;
+    
+}
+
+.ranking {
+  margin:15px;
+}
+
+.ranking h3 {
+  padding-top:10px;
+  text-align:center;
+
+}
+.AnswerBlockCorrect {
+  
+  border: 3px solid #2ecc71;
+    
+}
+
+.btn-margin{
+  margin-bottom: 0px;
+
+}
+
+.tableRanking{
+  margin-bottom: -1px;
+
+}
+
+
+.AnswerBlockCorrect p{
+  font-weight:700;
+  font-size:20px;
+  color:#2ecc71;
+    
+}
+
+.AnswerBlockWrong {
+  
+  border: 3px solid #c0392b;
+    
+}
+
+.AnswerBlockWrong p{
+  font-weight:700;
+  font-size:20px;
+  color:#c0392b;
+    
+}
+
+
+
+.LastRecipe {
+    margin-top:10px;
+    padding:10px;
+    background: none repeat scroll 0% 0% #FAFAFA;
+    
+}
+
+.toRight {
+  text-align:right;
+  font-size:15px;
+  color: #999 ;
+  line-height:37px;
+}
+
+.panel-question .panel-heading > .panel-options a {
+    font-size: 24px ;
+    line-height: 25px !important;
+    color: #633B1D;
+}
+
+
+.panel-question .panel-body {
+    padding: 10px;
+    color: #979898;
+}
+
+.panel-question .panel-body:hover .contentAnswer {
+
+   visibility:visible;
+}
+
+.SidebarJumbo {
+  padding:10px 20px 20px 30px;
+  background-color:#555555;
+  background-image: url('../../assets/images/bg-sidebar.png');
+  background-repeat: repeat;
+
+
+}
+
+
+.SidebarJumboTeach {
+  padding:10px 20px 20px 30px;
+  background-color:#555555;
+  background-image: url('../../assets/images/bg-sidebar-teach.png');
+  background-repeat: repeat;
+
+
+}
+
+
+.cuisineExplored {
+  line-height:2em;
+
+
+}
+
+.cuisineExplored * {
+    padding-right:35px;
+    color: #57534A;
+}
+
+.cuisineExplored h1 {
+
+  font-size: 40px;
+  margin-left:0px;
+
+}
+
+.cuisineExplored h1, .cuisineExplored h2, .cuisineExplored h3, .cuisineExplored h4 {
+  font-family: 'Playfair Display', serif,Helvetica,Arial;
+  color: #423F37;
+
+}
+
+
+
+.navbarPlay a {
+  font-weight:700 !important;
+  color: #D35400 !important;
+
+
+}
+
+[class*="fa-"] {
+    
+    font-family: FontAwesome, 'Lato';
+
+}
+
+
+
+.TopDishesSidebar{
+  padding:10px 20px 20px 15px;
+  
+  background-repeat: repeat;
+
+
+}
+
+.TopDishesSidebar .table > thead > tr > td, .table > tbody > tr > td, .table > tfood > tr > td, .table > thead > tr > th, .table > tbody > tr > th, .table > tfood > tr > th {
+    padding: 3px;
+}
+   
+
+.panel-question .panel-body  .contentAnswer {
+       position:relative;
+       color:White;
+       z-index:5;
+       position:absolute;
+       top:0px;
+       left:0px;
+       width:100%;
+       height:100%;
+       background-color:Black;
+       z-index:1;
+       /* These three lines are for transparency in all browsers. */
+       -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+       filter: alpha(opacity=80);
+       opacity:.8;
+       visibility:hidden;
+   }
+
+.panel-question .panel-body:hover .contentInstruction {
+
+   visibility:hidden;
+}
+
+   
+
+.panel-body  .contentInstruction {
+    text-size:6px;
+    padding-left:10px;
+       
+       visibility:visible;
+   }
+
+.boxed-container .page-container .main-content {
+    background-color: #F7F4EF;
+}
+
+.boxed-container {
+    background-image: url('../../assets/images/food.png') !important;
+	background-repeat: repeat !important;
+}
+
+.shortlist {
+    margin-left: 0px;
+    margin-right:15px;
+    font-size:13px;
+}
+
+.btn.btn-icon-standalone.btn-lg span {
+    padding-left: 7px;
+}
+
+
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.xe-widget.xe-single-news .xe-image .xe-gradient {
+    
+    background-image: linear-gradient(to top, #555 0%, rgba(0, 0, 0, 0) 60%);
+}
