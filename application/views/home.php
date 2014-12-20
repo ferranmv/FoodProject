@@ -11,23 +11,23 @@
 	<title>Guess Food - Learn all about world food by playing!</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900|Lato:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
-	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-	<link rel="stylesheet" href="assets/css/xenon-core.css">
-	<link rel="stylesheet" href="assets/css/xenon-forms.css">
-	<link rel="stylesheet" href="assets/css/xenon-components.css">
-	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/bootstrap-social.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-core.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-components.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-skins.css">
 	
-         <link rel="stylesheet" href="assets/css/custom.css?v=1">
-        <link rel="stylesheet" href="assets/css/rehan_custom.css?v=1">
+         <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/custom.css?v=1">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/rehan_custom.css?v=1">
 
-         <script src="assets/js/jquery-2.0.3.min.js"></script>
+         <script src="<?php echo ROOT_URL ?>assets/js/jquery-2.0.3.min.js"></script>
          
          
         
-<!--	<script src="assets/js/jquery-1.11.1.min.js"></script>-->
+<!--	<script src="<?php echo ROOT_URL ?>assets/js/jquery-1.11.1.min.js"></script>-->
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -40,7 +40,7 @@
 <body class="page-body right-sidebar boxed-container">
 
     <div id="ajax_loader" >
-            <img src="assets/images/icons/gif-load.GIF" alt="ajax loader"/>
+            <img src="<?php echo ROOT_URL ?>assets/images/icons/gif-load.GIF" alt="ajax loader"/>
         </div>
          <div id="ajaxOverlay">                
         </div>
@@ -61,7 +61,7 @@
 						
 						<div class="user-image">
 							<a href="#">
-								<img id="user_pic_topmenu" src="assets/images/user-2.png" class="img-responsive img-circle" />
+								<img id="user_pic_topmenu" src="<?php echo ROOT_URL ?>assets/images/user-2.png" class="img-responsive img-circle" />
 							</a>
 						</div>
 						
@@ -149,7 +149,7 @@
 					
 			<ul class="navbar-nav">
 				<li>
-					<a href="<?php echo $this->config->item('base_url').'ranking/globalranking'; ?>">
+					<a href="<?php echo ROOT_URL.'ranking/globalranking'; ?>">
 						<i class="linecons-globe"></i>
 						<span class="title">Global Ranking</span>
 					</a>
@@ -160,8 +160,8 @@
 								<span class="title"><h4><i class="fa-flag"></i> Country Rankings</h4></span></a>
 						</li>
 						<li>
-							<a id="user_selected_country_link" href="<?php echo $this->config->item('base_url').'ranking/countryranking?c=Spain'; ?>">
-								<img width="18" id="user_selected_country_img" src="assets/images/flags/Spain.png"/>
+							<a id="user_selected_country_link" href="<?php echo ROOT_URL.'ranking/countryranking?c=Spain'; ?>">
+								<img width="18" id="user_selected_country_img" src="<?php echo ROOT_URL ?>assets/images/flags/Spain.png"/>
 								<span class="title" id="user_selected_country">in Spain</span>
 							</a>
 						</li>
@@ -206,7 +206,7 @@
 		
 				<li class="dropdown user-profile">
 					 <a href="#" data-toggle="settings-pane" style="display: none" id="user_profile">
-                            <img id="user_profile_picture" src="assets/images/user-1.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+                            <img id="user_profile_picture" src="<?php echo ROOT_URL ?>assets/images/user-1.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
                             <span>
                                 <span id="user_name">---</span>
                                 <i class="fa-angle-up"></i>
@@ -461,45 +461,45 @@
 	
 	
 	<!-- Imported styles on this page -->
-	<link rel="stylesheet" href="assets/js/daterangepicker/daterangepicker-bs3.css">
-	<link rel="stylesheet" href="assets/js/select2/select2.css">
-	<link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css">
-	<link rel="stylesheet" href="assets/js/multiselect/css/multi-select.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/js/daterangepicker/daterangepicker-bs3.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/js/select2/select2.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/js/multiselect/css/multi-select.css">
 
 
 	<!-- Bottom Scripts -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/TweenMax.min.js"></script>
-	<script src="assets/js/resizeable.js"></script>
-	<script src="assets/js/joinable.js"></script>
-	<script src="assets/js/xenon-api.js"></script>
-	<script src="assets/js/xenon-toggles.js"></script>
-	<script src="assets/js/moment.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/TweenMax.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/resizeable.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/joinable.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/xenon-api.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/xenon-toggles.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/moment.min.js"></script>
 
         <!-- My Own Scripts -->
-          <script src="assets/js/guessfood/facebook_settings.js?v=1"></script>
-          <script src="assets/js/guessfood/UserController.js?v=1"></script>
-           <script src="assets/js/guessfood/MiscController.js?v=1"></script>
-           <script src="assets/js/guessfood/QuestionAnswerController.js?v=1"></script>
-        <script src="assets/js/guessfood/DataActionController.js?v=1"></script>
+          <script src="<?php echo ROOT_URL ?>assets/js/guessfood/facebook_settings.js?v=1"></script>
+          <script src="<?php echo ROOT_URL ?>assets/js/guessfood/UserController.js?v=1"></script>
+           <script src="<?php echo ROOT_URL ?>assets/js/guessfood/MiscController.js?v=1"></script>
+           <script src="<?php echo ROOT_URL ?>assets/js/guessfood/QuestionAnswerController.js?v=1"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/guessfood/DataActionController.js?v=1"></script>
 
 	<!-- Imported scripts on this page -->
-	<script src="assets/js/daterangepicker/daterangepicker.js"></script>
-	<script src="assets/js/datepicker/bootstrap-datepicker.js"></script>
-	<script src="assets/js/timepicker/bootstrap-timepicker.min.js"></script>
-	<script src="assets/js/colorpicker/bootstrap-colorpicker.min.js"></script>
-	<script src="assets/js/select2/select2.min.js"></script>
-	<script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
-	<script src="assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
-	<script src="assets/js/tagsinput/bootstrap-tagsinput.min.js"></script>
-	<script src="assets/js/typeahead.bundle.js"></script>
-	<script src="assets/js/handlebars.min.js"></script>
-	<script src="assets/js/multiselect/js/jquery.multi-select.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/daterangepicker/daterangepicker.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/datepicker/bootstrap-datepicker.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/timepicker/bootstrap-timepicker.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/colorpicker/bootstrap-colorpicker.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/select2/select2.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/jquery-ui/jquery-ui.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/tagsinput/bootstrap-tagsinput.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/typeahead.bundle.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/handlebars.min.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/multiselect/js/jquery.multi-select.js"></script>
 
 
 
 	<!-- JavaScripts initializations and stuff -->
-	<script src="assets/js/xenon-custom.js"></script>
+	<script src="<?php echo ROOT_URL ?>assets/js/xenon-custom.js"></script>
             
         <script>
             DataActionController.setBaseUrl('<?php echo $this->config->item('base_url'); ?>');

@@ -14,8 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/guessfood/index.php/';
-
+$config['base_url']	= 'http://localhost/guessfood/';//http://www.guessfood.com/
+define ('ROOT_URL','http://localhost/guessfood/');
 /*
 |--------------------------------------------------------------------------
 | Index File

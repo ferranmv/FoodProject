@@ -14,6 +14,11 @@ and open the template in the editor.
     right: 5px;
 }
 
+.FbShareBtn {
+    position: relative;
+    top: 25px;
+}
+
 #ajaxOverlay
 {
     position: absolute;

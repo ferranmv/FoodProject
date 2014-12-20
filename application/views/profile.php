@@ -11,20 +11,20 @@
         <title>Xenon - Boxed &amp; Horizontal Menu</title>
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
-        <link rel="stylesheet" href="../../assets/css/fonts/linecons/css/linecons.css">
-        <link rel="stylesheet" href="../../assets/css/fonts/fontawesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../../assets/css/bootstrap.css">
-        <link rel="stylesheet" href="../../assets/css/bootstrap-social.css">
-        <link rel="stylesheet" href="../../assets/css/xenon-core.css">
-        <link rel="stylesheet" href="../../assets/css/xenon-forms.css">
-        <link rel="stylesheet" href="../../assets/css/xenon-components.css">
-        <link rel="stylesheet" href="../../assets/css/xenon-skins.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/fonts/linecons/css/linecons.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/fonts/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/bootstrap-social.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-core.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-forms.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-components.css">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/xenon-skins.css">
 
-        <link rel="stylesheet" href="../../assets/css/custom.css?v=2">
-        <link rel="stylesheet" href="../../assets/css/rehan_custom.css?v=2">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/custom.css?v=2">
+        <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/rehan_custom.css?v=2">
 
 
-        <script src="../../assets/js/jquery-1.11.1.min.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/jquery-1.11.1.min.js"></script>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
     </head>
     <body class="page-body boxed-container">
         <div id="ajax_loader" >
-            <img src="../../assets/images/icons/gif-load.GIF" alt="ajax loader"/>
+            <img src="<?php echo ROOT_URL ?>assets/images/icons/gif-load.GIF" alt="ajax loader"/>
         </div>
         <div id="ajaxOverlay">                
         </div>
@@ -57,7 +57,7 @@
 
                             <div class="user-image">
                                 <a href="#">
-                                    <img id="user_pic_topmenu" src="../../assets/images/user-2.png" class="img-responsive img-circle" />
+                                    <img id="user_pic_topmenu" src="<?php echo ROOT_URL ?>assets/images/user-2.png" class="img-responsive img-circle" />
                                 </a>
                             </div>
 
@@ -102,7 +102,7 @@
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
 
-                    <a href="<?php echo substr($this->config->item('base_url'),0,-11); ?>" >
+                    <a href="<?php echo ROOT_URL; ?>" >
                         <span class="logo1">Guess Food</span>				
                     </a>
 
@@ -144,13 +144,13 @@
 
                 <ul class="navbar-nav">
                     <li class="navbarPlay">
-                        <a href="<?php echo substr($this->config->item('base_url'),0,-11); ?>">
+                        <a href="<?php echo ROOT_URL; ?>">
                             <i class="fa-gamepad"></i>
                             <span class="title">Play!</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->config->item('base_url').'ranking/globalranking'; ?>">
+                        <a href="<?php echo ROOT_URL.'ranking/globalranking'; ?>">
                             <i class="linecons-globe"></i>
                             <span class="title">Global Ranking</span>
                         </a>
@@ -161,7 +161,7 @@
                                     <span class="title"><h4><i class="fa-flag"></i> Country Rankings</h4></span></a>
                             </li>
                             <li>
-                                <a id="user_selected_country_link" href="<?php echo $this->config->item('base_url').'ranking/countryranking?c=Spain'; ?>">
+                                <a id="user_selected_country_link" href="<?php echo ROOT_URL.'ranking/countryranking?c=Spain'; ?>">
 								<img width="18" id="user_selected_country_img" src="assets/images/flags/Spain.png"/>
 								<span class="title" id="user_selected_country">in Spain</span>
 							</a>
@@ -293,7 +293,7 @@
                             <div class="user-info-sidebar">
 
                                 <a href="#" class="user-img">
-                                    <img id="user_profilepage_image" src="../../assets/images/user-4.png" alt="user-img" class="img-cirlce img-responsive img-thumbnail" />
+                                    <img id="user_profilepage_image" src="<?php echo ROOT_URL ?>assets/images/user-4.png" alt="user-img" class="img-cirlce img-responsive img-thumbnail" />
                                 </a>
 
                                 <a href="#" class="user-name">
@@ -304,7 +304,7 @@
 
 
                                 <div class="wrapper">
-                                    <a href="<?php echo $this->config->item('base_url').'user/editprofile'; ?>" ><i class="linecons-cog"></i> Edit Profile</a>	
+                                    <a href="<?php echo ROOT_URL.'user/editprofile'; ?>" ><i class="linecons-cog"></i> Edit Profile</a>	
                                 </div>
 
                                 <hr />
@@ -420,25 +420,25 @@
 
 
         <!-- Bottom Scripts -->
-        <script src="../../assets/js/bootstrap.min.js"></script>
-        <script src="../../assets/js/TweenMax.min.js"></script>
-        <script src="../../assets/js/resizeable.js"></script>
-        <script src="../../assets/js/joinable.js"></script>
-        <script src="../../assets/js/xenon-api.js"></script>
-        <script src="../../assets/js/xenon-toggles.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/TweenMax.min.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/resizeable.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/joinable.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/xenon-api.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/xenon-toggles.js"></script>
 
         <!-- My Own Scripts -->
-        <script src="../../assets/js/guessfood/facebook_settings.js?v=2"></script>
-        <script src="../../assets/js/guessfood/UserController.js?v=2"></script>
-        <script src="../../assets/js/guessfood/MiscController.js?v=2"></script>        
-        <script src="../../assets/js/guessfood/DataActionController.js?v=2"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/guessfood/facebook_settings.js?v=2"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/guessfood/UserController.js?v=2"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/guessfood/MiscController.js?v=2"></script>        
+        <script src="<?php echo ROOT_URL ?>assets/js/guessfood/DataActionController.js?v=2"></script>
 
         <!-- JavaScripts initializations and stuff -->
-        <script src="../../assets/js/xenon-custom.js"></script>
+        <script src="<?php echo ROOT_URL ?>assets/js/xenon-custom.js"></script>
 
 
         <script>
-            DataActionController.setBaseUrl('<?php echo $this->config->item('base_url'); ?>');
+            DataActionController.setBaseUrl('<?php echo ROOT_URL; ?>');
                                 UserController.updateUserProfilePageData(<?php echo $user_detail; ?>);
         </script>
 

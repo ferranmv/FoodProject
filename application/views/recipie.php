@@ -8,7 +8,7 @@
         <meta name="description" content="Xenon Boostrap Admin Panel" />
         <meta name="author" content="" />
 
-        <title>Player Ranking!</title>
+        <title>Recipie Detail</title>
 
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900|Lato:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo ROOT_URL ?>assets/css/fonts/linecons/css/linecons.css">
@@ -36,6 +36,21 @@
 
     </head>
     <body class="page-body right-sidebar boxed-container">
+        
+        <script>
+       
+    (function(d) {
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement('script');
+        js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+    }(document));    
+        </script>
 
         <div id="ajax_loader" >
             <img src="<?php echo ROOT_URL ?>assets/images/icons/gif-load.GIF" alt="ajax loader"/>
@@ -290,69 +305,17 @@
 
 
                 <div class="row" id="main_ranking_parent">
-                    		
-
-			<div style="text-align:center">
-				<h1 style="margin-left:10px; display:inline-block;  vertical-align: text-bottom;">   
-                                    <?php if(isset($ranking_country_name)){?>
-                                    <span style="display:inline-block; vertical-align: text-bottom;">
-                                    <img width="70" src="<?php echo ROOT_URL.'assets/images/flags/'.$ranking_country_name.'.png'; ?>" alt="country flag"/>
-                                    </span>
-                                    <?php } else if(isset ($cuisine_name)){ ?>
-                                    <span style="display:inline-block; vertical-align: text-bottom;">
-                                    <?php echo $cuisine_name; ?>
-                                    </span>
-                                    <?php } ?>
-                                    <?php  echo $ranking_type ?></h1><h3 style="margin-left:10px; display:inline-block;  vertical-align: text-bottom;"> - <?php echo $current_date; ?></h3></span>
-                                    
-                        <?php if(isset($ranking_country_name)){?>
-                        <p>People from <?php echo $ranking_country_name; ?> Ranking</p>
-                        <?php } else if(isset ($cuisine_name)){ ?>
-                         <p>Ranking of the users of in <?php echo $cuisine_name; ?> </p>
-                        <?php }else{ ?>
-				<p>Ranking of the users of our community . </p>
-                                <?php } ?>
-				
-			</div>
-			<?php if($loggedIn){ ?>
-			<div class="YouRanking ReviewRight btn btn-lg">Your Ranking</div>
-			<?php } ?>		
-			
-
-			<table class="table table-condensed table-hover">
-							<thead>
-								<tr >
-									<th width="1%"><i class="fa fa-line-chart"></i></th>
-									<th><i class="fa fa-flag-o"></i></th>
-									<th>User</th>
-									<th>Points</th>
-									<th>% Right</th>
-									<th>Questions</th>
-									<th>Right</th>
-									<th>Wrong</th>
-								</tr>
-							</thead>
-							
-							<tbody id="ranking_rows">
-							
-							</tbody>
-						</table>
+                    	
+                    <h1 style="margin-left:10px; display:inline-block;  vertical-align: text-bottom;"><?php print_r ($recipie->name); ?></h1>
+                        <br/>
+                        <?php print_r ($recipie->description); ?>
+                        <br/><br/>
+                       <img src="<?php echo ROOT_URL ?><?php echo ($recipie->image_link);?>" alt="recipie image"/>
+                        <br/>
                         
-                        <div id="pagination_block">
-                            
+                        <div class="FbShareBtn">
+                            <div class="fb-share-button" data-href="<?php  $url=ROOT_URL.'recipie/view/'.$recipie_url; echo $url; ?>" data-layout="button_count"></div>
                         </div>
-
-			
-
-			
-				
-				
-
-			
-				
-				
-			
-				
                 </div>
 
 
@@ -521,43 +484,11 @@
 <script>
 
 
-    MiscController.populateDrownDownMenu(true);
+   // MiscController.populateDrownDownMenu(true);
     MiscController.populateCuisines();    
-    QuestionAnswerController.displayAdz(true);
-    FacebookController.initialize();
-    (function(d) {
-        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement('script');
-        js.id = id;
-        js.async = true;
-        js.src = "//connect.facebook.net/en_US/all.js";
-        ref.parentNode.insertBefore(js, ref);
-    }(document));
-
-    var c_u=null;
-    <?php if(isset($u_id)){ ?>
-        c_u='<?php echo $u_id; ?>';
-        MiscController.c_u=c_u;
-    <?php }?>
-    UserController.dispplayRanking(<?php echo $ranking_data; ?>,c_u);
+   // QuestionAnswerController.displayAdz(true);
     
-                            <?php if(isset($ranking_country_name)){?>
-                                MiscController.rankingType='<?php echo $ranking_country_name ?>';                                
-                            <?php }else if(isset($cuisine_name)) { ?>
-                                 MiscController.rankingType='<?php echo 'cuisine_'.$cuisine_name ?>';
-                                 MiscController.current_cusine_id='<?php echo $cuisine_id; ?>';
-                            <?php } else{ ?>
-                                MiscController.rankingType='global';
-                            <?php } ?>
-                                
-                                <?php if(isset($total_pages)){ ?>
-                                    MiscController.rankngTotalPages='<?php echo $total_pages; ?>';
-                                <?php } ?>
-                                
-                                MiscController.createPagination();
+     FacebookController.initialize();
 
 </script>
  <?php

@@ -1,20 +1,28 @@
 <?php
 
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-class Home extends CI_Controller {
-   
+/**
+ * Description of recipie
+ *
+ * @author RashFlash
+ */
+class recipie extends CI_Controller{
     private $CI_Session;
+    //put your code here
     public function __construct() {
         parent::__construct();
+        $this->load->model('question_answer_model');   
         $this->load->model('home_model');   
         $this->load->model('user_model');   
         $this->CI_Session=new session_helper();
     }
-
-    public function index() {
-         $status = $this->CI_Session->get_session('status');
+    public function view($recipie_slug){
+        $status = $this->CI_Session->get_session('status');
           if (!$status) {                       
             $data['loggedIn']=false;
              $data['country_choosen']=false;
@@ -44,13 +52,15 @@ class Home extends CI_Controller {
                   $data['country_choosen']=false;
             }
         }
-
-        $this->load->view('home',$data);
+        
+        $recipie_url=$recipie_slug;
+        $recipie_slug=$this->question_answer_model->getTitleFromUrl($recipie_slug);
+        
+        $recipie_detail=$this->question_answer_model->fetchrecipieByTitle($recipie_slug);
+        
+        $data['recipie']=$recipie_detail;
+        $data['recipie_url']=$recipie_url;
+        $this->load->view('recipie',$data);
     }
-    
-   
-    
+        
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

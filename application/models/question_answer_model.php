@@ -80,6 +80,24 @@ class question_answer_model extends CI_Model {
 
         return $row;
     }
+    
+    public function fetchrecipieByTitle($title) {
+        $query = 'SELECT * FROM recipie where name="' . $title . '"';
+        $result = $this->db->query($query);
+        $row = $result->first_row();
+
+        return $row;
+    }
+    
+    public function makeUrlFromTitle($title){
+        $title = str_replace(' ', '-', $title);      
+        return $title;
+    }
+    
+    public function getTitleFromUrl($url){
+        $url = str_replace('-', ' ', $url);      
+        return $url;
+    }
 
     public function matchUserAnswer($question_id, $user_choices) {
         $correct = 'T';
